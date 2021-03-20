@@ -46,6 +46,10 @@ li a:hover {
   background-color: lightgreen;
 }
 
+.vnav li{
+  float: none;
+}
+
 .vnav li a {
   display: block;
   color: black;
