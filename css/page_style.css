@@ -31,6 +31,15 @@ footer {
 p {text-align: left;
 }
 
+/* h1 and h3 style */
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
 /* Horizontal Nav Menu Style */
 ul {
   list-style-type: none;
