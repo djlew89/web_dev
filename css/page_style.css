@@ -1,0 +1,145 @@
+/* center class for image in the header */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+/* Style the header */
+header {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the body*/
+body {
+  margin: 0;
+  background-color: forestgreen;
+}
+
+/* Style footer */
+footer {
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+
+}
+
+/* Paragraph style */
+p {text-align: left;
+}
+
+/* h1 and h3 style */
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* Horizontal Nav Menu Style */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkolivegreen;
+  font-size: 3em;
+
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+li a:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+/* Vertical Nav Menu Style (class="vnav")
+    eliminated float from horizontal nav */
+.vnav ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  width: 200px;
+  background-color: lightgreen;
+}
+
+.vnav li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: large;
+  float: none;
+}
+
+/* Change the link color on hover */
+.vnav li a:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+/* Create flex container */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container > div {
+  margin: 1.5em;
+  padding: 1.5em;
+  font-size: larger;
+}
+
+/* Dropdown function for lists: 
+  might not include this */
+.dropbtn {
+  background-color: green;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
