@@ -8,6 +8,7 @@
     <img src="../images/link_chicken.jpg" alt="Link was here..." class="center">
     <link rel="shortcut icon" href="../images/chicken.jpg">
     <link rel="stylesheet" href="../css/page_style.css">
+    <link rel="stylesheet" href="../css/contact_form.css">
     <h1>Chicken Linkin'</h1>
     <style>
 
@@ -26,6 +27,62 @@
 <body>
   <!-- Add Contact Form  -->
   <h1>Please Contact Us!</h1>
+  <div class="container">
+    <form action="form.php" method="get" target="_blank"> 
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="var1" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="var2" placeholder="Your last name..">
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="var3" placeholder="Your email here..">
+
+      <!-- one question with two radio buttons -->
+      <label>How Would You Describe Chickens?</label><br>
+      <input type="radio" id="great" name="var4" value="great">
+      <label for="great">Great</label><br>
+      <input type="radio" id="amazing" name="var4" value="amazing">
+      <label for="amazing">Amazing</label><br>
+      <br>
+
+      <!-- drop down selection field with 4 listed options -->
+      <label for="country">Country</label>
+      <select id="country" name="var5">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <!-- a number field -->
+      <label for="quantity">How many chickens can a man walk down?:</label><br>
+      <input type="number" id="quantity" name="var6" min="1"><br><br>
+
+      <!-- 6 checkboxes, check what's appropriate var7-var12 -->
+      <label>Select the chickens that apply to you:</label><br>
+      <input type="checkbox" id="classic" name="var7" value="classic">
+      <label for="classic">Classic Chicken</label><br>
+      <input type="checkbox" id="magic" name="var8" value="magic">
+      <label for="magic">Magic Chicken</label><br>
+      <input type="checkbox" id="nightmare" name="var9" value="nightmare">
+      <label for="nightmare">Nightmare Chicken</label><br>
+      <input type="checkbox" id="space" name="var10" value="space">
+      <label for="space">Space Chicken</label><br>
+      <input type="checkbox" id="thicc" name="var11" value="thicc">
+      <label for="thicc">Thicc Chicken</label><br>
+      <input type="checkbox" id="boss" name="var12" value="boss">
+      <label for="boss">Boss Chicken</label><br>
+      <br>
+        <!-- A text area field for real chicken lovers  -->
+      <label for="subject">How great are chickens, really?!</label>
+      <textarea id="subject" name="var13" placeholder="Write something about chickens.." style="height:200px"></textarea>
+      
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
 
 </body> 
 <footer>This site was designed and publised by - Dan Lewis -</footer>
